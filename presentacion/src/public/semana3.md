@@ -66,8 +66,9 @@ y la suma es igual a 180° × (lados – 2).
 
 ![Ejercicio 2.1](./img/ejercicio_2_1.png) <!-- .element class="noborder center" -->
 
-![Ejercicio 2.2](./img/ejercicio_2_2.png) <!-- .element class="noborder center" -->
+#### Extra: <!-- .element style="text-align:center" -->
 
+![Ejercicio 2.2](./img/ejercicio_2_2.png) <!-- .element class="noborder center" -->
 
 
 ---
@@ -96,6 +97,8 @@ for vuelta_exterior in range(5):
 # Ejercicio 3
 
 ![Ejercicio 3](./img/ejercicio_3.png) <!-- .element class="noborder center" -->
+
+**Extra**: ¿Puedes hacerlos utilizando variables para el largo de la línea, distancia entre líneas, lado del cuadrado largo...?
 
 ---
 
