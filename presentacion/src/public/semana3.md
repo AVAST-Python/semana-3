@@ -102,8 +102,109 @@ for vuelta_exterior in range(5):
 
 ---
 
+# Booleanos
 
-CONDICIONALES
+- Es otro tipo de datos fundamental (además de "números" y cadenas )
+- Dos valores: `True` / `False` (o verdad / mentira, cero/uno)
+- Operadores para conseguir booleanos:
+  - `True` y `False`
+  - Igual: `==` ¡¡¡OJO!!! ¡¡NO ES UN SOLO `=`!!
+  - Distinto: `!=`
+  - Mayor, mayor o igual: `>`, `>=`
+  - Menor, menor o igual: `<` `<=`
+- Los usaremos para comparar números y cadenas, pero ojo con comparar cadenas
+
+<br>
+
+- **OJO**: Cuidado cuando comparéis números con decimales: ¿`0.1 + 0.2 == 0.3`?
+- **OJO**: Se pueden encadenar, pero no os lo recomiendo: `1 < 2 < 3`
+- Los comparadores en Python son más complejos, pero ya hablaremos más de ellos
+
+---
+
+IF, else
+
+---
+
+https://www.youtube.com/watch?v=KtYgG6VIrFg&ab_channel=SanjinDedic
+https://www.youtube.com/watch?v=3psKwVWuGkI&ab_channel=ITELSPACE
+
+Operador %
+Rellenar con la tortuga: begin_fill(), end_fill()
+Ejercicios tortuga con condicional
+
+Cuadrados rellenos alternos
+Tablero ajedrez
 
 
+---
 
+
+DESDE AQUI, MUY AVANZADO: HACER PARA CUANDO VOLVAMOS A RETOMAR BUCLES Y CONDICIONALES
+
+---
+
+# Operaciones con booleanos
+
+- Tres operaciones: `NOT`, `AND`, `OR`:
+
+
+<table>
+<tr><th>NOT</th><th>AND</th><th>OR</th></tr>
+<tr>
+<td>
+
+|a| `not(a)` |
+|--|--|
+| True | False |
+| False | True |
+
+</td><td>
+
+|a|b|`a and b`|
+|--|--|--|
+| True | True | True |
+| True | False | False |
+| False | True | False |
+| False | False | False |
+</td><td>
+
+|a|b|`a or b`|
+|--|--|--|
+| True | True | True |
+| True | False | True |
+| False | True | True |
+| False | False | False |
+
+</td></tr>
+</table>
+
+---
+
+# Ejercicio con booleanos
+
+```python
+he_robado = ...
+me_han_pillado = ...
+he_sido_acusado_injustamente = ...
+he_sobornado_al_juez = ...
+tengo_millones = 0.001
+```
+<!-- .element style="font-size: 1em" -->
+Escribe expresiones booleanas para lo siguiente. `True` es que vas a la carcel:
+- Si has robado y te han pillado, vas a la carcel.
+- Si has robado, o no has robado pero  has sido acusado injustamente, vas a la carcel
+- Si has robado y te han pillado vas a la carcel, excepto si has sobornado al juez
+- Si tienes más de 100 millones, no vas a la carcel aunque hayas robado y te hayan pillado
+- Si has sobornado al juez y te han pillado, vas a la carcel.
+
+---
+
+IF
+
+
+VER OPERADOR INPUT
+
+---
+
+EJERCICIO IF
