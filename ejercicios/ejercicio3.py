@@ -9,43 +9,47 @@ t.speed (500)
 t.color('#4689BC')
 
 t.penup()
-t.goto(-450, 100)
+t.goto(-400, 100)
 t.pendown()
 
 
-# Escalera reducing
-for vuelta in range(4):
-    t.left(90)
-    t.forward(100-25*vuelta)
+# Rows of lines
+largo_rayas = 30
+distancia_lineas = 50
+
+for _ in range(4):
+
+    for _ in range(5):
+        t.forward(largo_rayas)
+        t.penup()
+        t.forward(largo_rayas)
+        t.pendown()
+
+    t.penup()
     t.right(90)
-    t.forward(100-25*vuelta)
+    t.forward(distancia_lineas)
+    t.left(90)
+    t.backward(largo_rayas*2*5)
+    t.pendown()
 
 
 t.penup()
-t.goto(-250, 100)
+t.goto(150, 100)
 t.pendown()
 
-# Pinchos increasing
-for vuelta in range(7):
-    t.left(90)
-    t.forward(30*vuelta)
-    t.left(180)
-    t.forward(30*vuelta)
-    t.left(90)
-    t.forward(30*vuelta)
+# Squares in squares
+cuadrado_pequeño = 100
+cuadrado_grande = 200
 
+for _ in range(4):
+    t.forward(cuadrado_grande)
 
-t.penup()
-t.goto(-150, -250)
-t.pendown()
+    for _ in range(4):
+        t.left(90)
+        t.forward(cuadrado_pequeño)
 
-# Extra: Flor
-lado = 10
-vueltas = 30
-for num_vuelta in range(vueltas):
+    t.right(90)
 
-    t.forward(num_vuelta * lado)
-    t.left(90+10)
 
 t.hideturtle()
 turtle.exitonclick()
