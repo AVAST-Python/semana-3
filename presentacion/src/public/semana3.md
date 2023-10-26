@@ -87,6 +87,7 @@ for vuelta_exterior in range(5):
     t.penup()
     t.left(30)
 ```
+<!-- .element style="font-size: 1em" -->
 
 - Se pueden usar bucles dentro de bucles
 - Dentro de un bucle, lo que hay una secuencia de instrucciones
@@ -111,7 +112,7 @@ for vuelta_exterior in range(5):
   - Igual: `==` ¡¡¡OJO!!! ¡¡NO ES UN SOLO `=`!!
   - Distinto: `!=`
   - Mayor, mayor o igual: `>`, `>=`
-  - Menor, menor o igual: `<` `<=`
+  - Menor, menor o igual: `<`, `<=`
 - Los usaremos para comparar números y cadenas, pero ojo con comparar cadenas
 
 <br>
@@ -122,89 +123,59 @@ for vuelta_exterior in range(5):
 
 ---
 
-IF, else
-
----
-
-https://www.youtube.com/watch?v=KtYgG6VIrFg&ab_channel=SanjinDedic
-https://www.youtube.com/watch?v=3psKwVWuGkI&ab_channel=ITELSPACE
-
-Operador %
-Rellenar con la tortuga: begin_fill(), end_fill()
-Ejercicios tortuga con condicional
-
-Cuadrados rellenos alternos
-Tablero ajedrez
-
-
----
-
-
-DESDE AQUI, MUY AVANZADO: HACER PARA CUANDO VOLVAMOS A RETOMAR BUCLES Y CONDICIONALES
-
----
-
-# Operaciones con booleanos
-
-- Tres operaciones: `NOT`, `AND`, `OR`:
-
-
-<table>
-<tr><th>NOT</th><th>AND</th><th>OR</th></tr>
-<tr>
-<td>
-
-|a| `not(a)` |
-|--|--|
-| True | False |
-| False | True |
-
-</td><td>
-
-|a|b|`a and b`|
-|--|--|--|
-| True | True | True |
-| True | False | False |
-| False | True | False |
-| False | False | False |
-</td><td>
-
-|a|b|`a or b`|
-|--|--|--|
-| True | True | True |
-| True | False | True |
-| False | True | True |
-| False | False | False |
-
-</td></tr>
-</table>
-
----
-
-# Ejercicio con booleanos
+# Condicionales
 
 ```python
-he_robado = ...
-me_han_pillado = ...
-he_sido_acusado_injustamente = ...
-he_sobornado_al_juez = ...
-tengo_millones = 0.001
+if ALGO_BOOLEANO:
+    secuencia_instrucciones_1
+elif OTRA_CONDICION:
+    secuencia_instrucciones_2
+elif OTRA_CONDICION_MAS:
+    secuencia_instrucciones_3
+else:
+    secuencia_instrucciones_4
 ```
 <!-- .element style="font-size: 1em" -->
-Escribe expresiones booleanas para lo siguiente. `True` es que vas a la carcel:
-- Si has robado y te han pillado, vas a la carcel.
-- Si has robado, o no has robado pero  has sido acusado injustamente, vas a la carcel
-- Si has robado y te han pillado vas a la carcel, excepto si has sobornado al juez
-- Si tienes más de 100 millones, no vas a la carcel aunque hayas robado y te hayan pillado
-- Si has sobornado al juez y te han pillado, vas a la carcel.
+
+- Sirven para "bifurcar" el código
+- El `elif` y el `else` son opcionales
 
 ---
 
-IF
+# Ejemplo de condicionales
 
+```python
+if numero % 2 == 0:
+    print('El número es par')
+```
+<!-- .element style="font-size: 1em" -->
 
-VER OPERADOR INPUT
+¿Qué imprimirá cuando numero vale 6?
+
+¿Y cuando vale 5?
+---
+
+# Otro ejemplo de condicionales
+
+```python
+if numero > 10:
+    print('El número es grande')
+elif numero > 100:
+    print('El número es muy grande')
+else:
+    print('El número es una caca')
+```
+<!-- .element style="font-size: 1em" -->
+
+¿Qué imprimirá con los siguientes números?
+- 10
+- 101
+- 34
 
 ---
 
-EJERCICIO IF
+# Ejercicio 4
+
+![Ejercicio 4](./img/ejercicio_4.png) <!-- .element class="noborder center" -->
+
+**Extra**: Haz el dibujo que tiene varias líneas
