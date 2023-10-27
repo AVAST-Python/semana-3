@@ -9,6 +9,18 @@
 
 ---
 
+# Enlaces:
+
+
+- Tortuga: [https://pythonandturtle.com/turtle](https://pythonandturtle.com/turtle)
+- Repl: [https://www.pythonmorsels.com/repl/](https://www.pythonmorsels.com/repl/)
+- Presentaciones de las semanas anteriores:
+  - [https://avast-python.github.io/semana-1](https://avast-python.github.io/semana-1)
+  - [https://avast-python.github.io/semana-2](https://avast-python.github.io/semana-2)
+
+
+---
+
 ### La programación son cinco cosas
 
 1. ~~Secuencia~~ ✓
